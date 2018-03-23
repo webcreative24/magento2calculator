@@ -52,8 +52,10 @@ class Calculator implements CalculatorInterface
         $result = $this->calculateData();
 
         return [
-            ['status' => 'ok'],
-            ['result' => $result]
+            [
+                'status' => 'ok',
+                'result' => $result
+            ]
         ];
     }
 
