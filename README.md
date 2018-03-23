@@ -20,6 +20,6 @@ Call url http://host.com/rest/V1/api/rce/calculator/
 }
 ## Example response ##
 {
-"status":"ok"},
+"status":"ok",
 "result":-11.2
 }
