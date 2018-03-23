@@ -19,5 +19,7 @@ Call url http://host.com/rest/V1/api/rce/calculator/
 "precision": 1 
 }
 ## Example response ##
-{"status":"ok"},
-{"result":-11.2}
+{
+"status":"ok"},
+"result":-11.2
+}
