@@ -66,7 +66,7 @@ class Calculator implements CalculatorInterface
     public function setOperator($operator)
     {
         if (!in_array($operator, $this->_allowedOperators)) {
-            return ['error' => 'operator not allowed'];
+            throw new \Exception('Disallowed math method');
         }
         $this->_operator = $operator;
 
