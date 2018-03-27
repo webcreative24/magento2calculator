@@ -14,16 +14,16 @@ class Calculator implements CalculatorInterface
     private $_right;
     /* @var $_operator */
     private $_operator;
-    /* @var $_calculatorMathMethods */
+    /* @var \Yarmolich\Calculator\Api\CalculatorMathInterface */
     private $_calculatorMathMethods;
     /* @var $_allowedOperators */
     private $_allowedOperators = ['add', 'subtract', 'multiply', 'divide', 'power'];
 
     /**
      * Calculator constructor.
-     * @param CalculatorMathMethods $calculatorMathMethods
+     * @param \Yarmolich\Calculator\Api\CalculatorMathInterface $calculatorMathMethods
      */
-    public function __construct(\Yarmolich\Calculator\Model\CalculatorMathMethods $calculatorMathMethods)
+    public function __construct(\Yarmolich\Calculator\Api\CalculatorMathInterface $calculatorMathMethods)
     {
         $this->_calculatorMathMethods = $calculatorMathMethods;
     }
@@ -61,6 +61,7 @@ class Calculator implements CalculatorInterface
 
     /**
      * @param string $operator
+     * @throws
      * @return $this|array
      */
     public function setOperator($operator)

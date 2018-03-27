@@ -3,6 +3,6 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Yarmolich\Calculator\Api\CalculatorInterface"
                 type="Yarmolich\Calculator\Model\Calculator"/>
-    <preference for="Yarmolich\Calculator\Api\Calculator\MathInterface"
+    <preference for="Yarmolich\Calculator\Api\CalculatorMathInterface"
                 type="Yarmolich\Calculator\Model\CalculatorMathMethods"/>
 </config>
